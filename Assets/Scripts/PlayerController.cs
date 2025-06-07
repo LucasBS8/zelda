@@ -4,14 +4,18 @@ public class PlayerController : MonoBehaviour
 {
     private CharacterController controller;
     private Animator anim;
-    private Vector3 direction;
     private ParticleSystem slash;
 
     private bool isWalk;
     private float horizontal;
     private float vertical;
 
+    public GameObject cam;
+
+    private GameManager gameManager;
+
     [Header("Player Configurations")]
+    [SerializeField] private int hp = 4;
     [SerializeField] private float movementeSpeed;
     [SerializeField] private bool isAttack;
     [SerializeField] private Transform hitBox;
@@ -22,6 +26,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        gameManager = FindFirstObjectByType<GameManager>();
         slash = GetComponentInChildren<ParticleSystem>();
         controller = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
@@ -29,9 +34,13 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (gameManager.gameState != GameState.GAMEPLAY)
+            return;
+
         Inputs();
         MoveCharacter();
         UpdateAnimator();
+
     }
 
     private void UpdateAnimator()
@@ -41,19 +50,30 @@ public class PlayerController : MonoBehaviour
 
     private void MoveCharacter()
     {
-        direction = new Vector3(horizontal, 0f, vertical).normalized;
-        if (direction.magnitude > 0.1)
+        float horizontal = Input.GetAxis("Horizontal");
+        float vertical = Input.GetAxis("Vertical");
+        Vector3 inputDirection = new(horizontal, 0f, vertical);
+        Vector3 camForward = cam.transform.forward;
+        Vector3 camRight = cam.transform.right;
+
+        camForward.y = 0f;
+        camRight.y = 0f;
+        camForward.Normalize();
+        camRight.Normalize();
+
+        Vector3 moveDirection = camForward * inputDirection.z + camRight * inputDirection.x;
+
+        if (moveDirection.magnitude > 0.1f)
         {
             isWalk = true;
-            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
+            float targetAngle = Mathf.Atan2(moveDirection.x, moveDirection.z) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
         }
         else
         {
             isWalk = false;
         }
-
-        controller.Move(direction * movementeSpeed * Time.deltaTime);
+        controller.Move(movementeSpeed * Time.deltaTime * moveDirection.normalized);
     }
 
     private void Inputs()
@@ -93,5 +113,25 @@ public class PlayerController : MonoBehaviour
             Gizmos.color = Color.yellow;
             Gizmos.DrawSphere(hitBox.position, hitRange);
         }
+    }
+
+    private void GetHit(int amount)
+    {
+        hp -= amount;
+        if (hp > 0)
+        {
+            anim.SetTrigger("Hit");
+        }
+        else
+        {
+            anim.SetTrigger("Die");
+            gameManager.ChangeGameState(GameState.DIE);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("TakeDamage"))
+            GetHit(1);
     }
 }

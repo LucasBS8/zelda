@@ -34,6 +34,8 @@ public class Slime : MonoBehaviour
 
     void Update()
     {
+        if (isDie)
+            return;
         StateManager();
 
         if (agent.desiredVelocity.magnitude > 0.1f)
@@ -66,9 +68,11 @@ public class Slime : MonoBehaviour
         }
     }
 
-
     private void StateManager()
     {
+        if (gameManager.gameState == GameState.DIE && (state == EnemyState.FURY || state == EnemyState.ALERT))
+            ChangeState(EnemyState.IDLE);
+
         switch (state)
         {
             case EnemyState.IDLE:
@@ -85,6 +89,10 @@ public class Slime : MonoBehaviour
                 if (agent.remainingDistance <= agent.stoppingDistance)
                 {
                     Attack();
+                }
+                else
+                {
+                    StartCoroutine(Idle());
                 }
                 break;
 
@@ -125,6 +133,7 @@ public class Slime : MonoBehaviour
                 agent.stoppingDistance = gameManager.slimeDistanceToAttack;
                 destination = transform.position;
                 agent.destination = destination;
+                StartCoroutine(Fury());
                 break;
 
             case EnemyState.FOLLOW:
@@ -138,8 +147,12 @@ public class Slime : MonoBehaviour
                 isAlert = true;
                 StartCoroutine(Alert());
                 break;
-        }
 
+            case EnemyState.DIE:
+                destination = transform.position;
+                agent.destination = destination;
+                break;
+        }
         state = newState;
     }
 
@@ -154,7 +167,8 @@ public class Slime : MonoBehaviour
     {
         if (isDie)
         {
-            yield return new WaitForSeconds(2.5f);
+            yield return new WaitUntil(() => agent.remainingDistance <= 0);
+            yield return new WaitForSeconds(1f);
             Destroy(this.gameObject);
         }
     }
@@ -172,8 +186,25 @@ public class Slime : MonoBehaviour
         ChangeState(EnemyState.IDLE);
     }
 
+    private IEnumerator Fury()
+    {
+        yield return new WaitForSeconds(gameManager.slimeAlertTime);
+        if (isPlayerVisible)
+        {
+            ChangeState(EnemyState.FURY);
+        }
+        else
+        {
+            StayStill(10);
+        }
+    }
+
     private IEnumerator Alert()
     {
+        if (gameManager.gameState != GameState.GAMEPLAY)
+        {
+            Idle();
+        }
         yield return new WaitForSeconds(gameManager.slimeAlertTime);
         if (isPlayerVisible)
         {
@@ -220,17 +251,28 @@ public class Slime : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             isAlert = false;
+            isAttack = false;
             isPlayerVisible = false;
         }
     }
 
     private void Attack()
     {
+        if (gameManager.gameState != GameState.GAMEPLAY)
+            return;
         if (!isAttack)
         {
             isAttack = true;
             anim.SetTrigger("attack");
         }
+
     }
     private void AttackIsDone() => StartCoroutine(AttackRoutine());
+
+    private void LookToAt()
+    {
+        Vector3 lookDirection = (gameManager.player.position - transform.position).normalized;
+        Quaternion lookRotation = Quaternion.LookRotation(lookDirection);
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, gameManager.slimeLookAtSpeed * Time.deltaTime);
+    }
 }
