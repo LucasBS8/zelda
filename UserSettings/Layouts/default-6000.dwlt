@@ -118,7 +118,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 46
+  controlID: 39
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 47
+  controlID: 40
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 48
+  controlID: 41
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 49
+  controlID: 42
   draggingID: 0
 --- !u!114 &9
 MonoBehaviour:
@@ -276,7 +276,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 111
+  controlID: 91
   draggingID: 0
 --- !u!114 &12
 MonoBehaviour:
@@ -288,7 +288,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -297,14 +297,14 @@ MonoBehaviour:
     y: 0
     width: 818
     height: 397
-  m_MinSize: {x: 101, y: 126}
-  m_MaxSize: {x: 4001, y: 4026}
-  m_ActualView: {fileID: 20}
+  m_MinSize: {x: 231, y: 276}
+  m_MaxSize: {x: 10001, y: 10026}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
   - {fileID: 20}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -434,23 +434,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: aaf7ffff
-      m_LastClickedID: -2134
-      m_ExpandedIDs: 4a08ffffc49bffffaaf7ffff
+      m_SelectedIDs: 4ab2feff
+      m_LastClickedID: -85430
+      m_ExpandedIDs: 4ab2feffc8b6feff363e0100e63e010070400100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: gemParticle(Clone)
+        m_OriginalName: gemParticle(Clone)
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -241998
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_TrimLeadingAndTrailingWhitespace: 0
         m_ClientGUIView: {fileID: 9}
@@ -1180,9 +1180,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 86.93894, y: -10.532287, z: 99.36024}
+    m_Target: {x: 101.64044, y: 14.295311, z: 90.79602}
     speed: 2
-    m_Value: {x: 86.93894, y: -10.532287, z: 99.36024}
+    m_Value: {x: 101.64044, y: 14.295311, z: 90.79602}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1228,13 +1228,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 1
   m_Rotation:
-    m_Target: {x: -0.36178765, y: 0.35875812, z: -0.15330026, w: -0.8467044}
+    m_Target: {x: -0.23788418, y: 0.42867944, z: -0.118096985, w: -0.86354214}
     speed: 2
-    m_Value: {x: -0.3617864, y: 0.35875687, z: -0.15329972, w: -0.8467015}
+    m_Value: {x: -0.23788339, y: 0.428678, z: -0.11809659, w: -0.8635393}
   m_Size:
-    m_Target: 20.929646
+    m_Target: 4.7818236
     speed: 2
-    m_Value: 20.929646
+    m_Value: 4.7818236
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1421,7 +1421,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/prefab
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1431,16 +1431,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 67
   m_LastFolders:
-  - Assets
+  - Assets/prefab
   m_LastFoldersGridSize: 67
-  m_LastProjectPath: D:\projetos\zelda
+  m_LastProjectPath: C:\Users\Matutino\Documents\github\zelda
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f8d30000
-    m_LastClickedID: 54264
-    m_ExpandedIDs: 00000000f8d30000
+    scrollPos: {x: 0, y: 1}
+    m_SelectedIDs: 503d0100
+    m_LastClickedID: 81232
+    m_ExpandedIDs: 00000000443d0100463d01005e3d0100784101008a410100e441010090470100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1469,7 +1469,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f8d30000
+    m_ExpandedIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1498,7 +1498,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: aa690000b0690000fc6900000c6a0000146a0000c47900004c7f00004a8200007c840000948c0000327200003a7200003e72000072770000387900003c790000347900004c79000026d500001c9f0000d04201002c6500009c6300005a690000546900004e690000dc6c0000a86c00009e630000a2bf0000acb8000014bf000064ce00000ad9000000000000c2d30000b40b0100b60b0100da090100a6d40000a2d50000fad6000096d7000032d80000
+    m_ExpandedInstanceIDs: aa690000b0690000fc6900000c6a0000146a0000c47900004c7f00004a8200007c840000948c0000327200003a7200003e72000072770000387900003c790000347900004c79000026d500001c9f0000d04201002c6500009c6300005a690000546900004e690000dc6c0000a86c00009e630000a2bf0000acb8000014bf000064ce00000ad9000000000000c2d30000b40b0100b60b0100da090100a6d40000a2d50000fad6000096d7000032d800008c410100acfc000060f7fdffcaadfcff
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1601,7 +1601,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -63414
+  m_LastSelectedObjectID: 81366
 --- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52
