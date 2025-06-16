@@ -32,6 +32,11 @@ public class PlayerTrigger : MonoBehaviour
             case "Collectable":
                 StartCoroutine(ColetableGem(other));
                 break;
+            case "Key":
+                gameManager.keyAmount++;
+                gameManager.OpenGate();
+                Destroy(other.gameObject, 0.6f);
+                break;
         }
     }
 

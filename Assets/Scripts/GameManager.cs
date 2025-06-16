@@ -45,6 +45,10 @@ public class GameManager : MonoBehaviour
     public GameObject gemPrefab;
     public int percDrop = 100;
 
+    [Header("Keys and gate")]
+    public int keyAmount;
+    public GameObject gate;
+
     [Header("NightManager")]
     public Volume postB;
     public int nightRateOverTime;
@@ -142,5 +146,13 @@ public class GameManager : MonoBehaviour
         int temp = Random.Range(0, 100);
         bool ret = temp <= p ? true : false;
         return ret;
+    }
+
+    public void OpenGate()
+    {
+        if (keyAmount >= 2)
+        {
+            gate.SetActive(false);
+        }
     }
 }
