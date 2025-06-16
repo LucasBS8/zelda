@@ -1,1 +1,29 @@
-/Library
+# Unity auto-generated
+Library/
+Temp/
+Obj/
+obj/
+Build/
+Builds/
+Logs/
+MemoryCaptures/
+
+# User-specific files
+UserSettings/
+.vscode/
+.idea/
+*.csproj
+*.sln
+*.user
+*.suo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Others
+*.log
+*.bak
+*.tmp
+*.stacktrace
