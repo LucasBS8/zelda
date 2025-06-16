@@ -165,12 +165,13 @@ public class Slime : MonoBehaviour
     //Corrotinas
     private IEnumerator Died()
     {
-        if (isDie)
+        isDie = true;
+        if (gameManager.Perc(gameManager.percDrop))
         {
-            yield return new WaitUntil(() => agent.remainingDistance <= 0);
-            yield return new WaitForSeconds(1f);
-            Destroy(this.gameObject);
+            Instantiate(gameManager.gemPrefab, new Vector3(transform.position.x, transform.position.y + 1f, transform.position.z), gameManager.transform.rotation);
         }
+        yield return new WaitForSeconds(1f);
+        Destroy(gameObject);
     }
 
     private IEnumerator Idle()

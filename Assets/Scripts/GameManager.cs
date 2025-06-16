@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -40,16 +41,28 @@ public class GameManager : MonoBehaviour
     public int rainIncrement;
     public float rainIncrementDelay;
 
+    [Header("Drop item")]
+    public GameObject gemPrefab;
+    public int percDrop = 100;
+
     [Header("NightManager")]
     public Volume postB;
     public int nightRateOverTime;
     public int nightIncrement;
     public int nightIncrementDelay;
 
+    [Header("UI")]
+    public TMP_Text gemsText;
+
     private void Awake()
     {
         rainParticle.Play();
         ChangeGameState(GameState.GAMEPLAY);
+    }
+
+    private void Start()
+    {
+        gemsText.text = gems.ToString();
     }
 
     public void OnRain(bool isRain)
@@ -120,5 +133,14 @@ public class GameManager : MonoBehaviour
     public void SetGems(int amount)
     {
         gems += amount;
+        gemsText.text = gems.ToString();
+    }
+
+
+    public bool Perc(int p)
+    {
+        int temp = Random.Range(0, 100);
+        bool ret = temp <= p ? true : false;
+        return ret;
     }
 }
