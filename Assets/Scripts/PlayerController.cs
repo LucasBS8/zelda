@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     private float horizontal;
     private float vertical;
 
+    [SerializeField] private bool isDead = false;
+
     public GameObject cam;
 
     private GameManager gameManager;
@@ -36,6 +38,9 @@ public class PlayerController : MonoBehaviour
     {
         if (gameManager.gameState != GameState.GAMEPLAY)
             return;
+
+       
+       
 
         Inputs();
         MoveCharacter();
@@ -116,7 +121,9 @@ public class PlayerController : MonoBehaviour
     }
 
     private void GetHit(int amount)
-    {
+    {   
+        if(isDead) { return; }
+
         hp -= amount;
         if (hp > 0)
         {
@@ -124,6 +131,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            isDead = true;
             anim.SetTrigger("Die");
             gameManager.ChangeGameState(GameState.DIE);
         }

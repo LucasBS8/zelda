@@ -17,6 +17,7 @@ public class SpikeSlime : MonoBehaviour
     [SerializeField] private bool isDead = false;
     [SerializeField] private float distanceFromPlayer;
     [SerializeField] private float distancetoAttack;
+    [SerializeField] private bool heavyAttackAvailable = false;
 
     [Header("GameObjects")]
     [SerializeField] private GameObject player;
@@ -38,6 +39,8 @@ public class SpikeSlime : MonoBehaviour
     void Update()
     {   
         if( isDead) { return; }
+
+        if (HP <= 5) { heavyAttackAvailable = true; }
         distanceFromPlayer = Vector3.Distance(transform.position, player.transform.position);
         
         if(distanceFromPlayer >= distancetoAttack)
@@ -45,8 +48,8 @@ public class SpikeSlime : MonoBehaviour
             WalkToPlayer();
         }
         else
-        {   
-            BasicAttack();
+        {
+            Attack();
             agent.ResetPath(); 
             animator.SetBool("walking", false); 
         }
@@ -62,13 +65,18 @@ public class SpikeSlime : MonoBehaviour
         }
     }
 
-    private void BasicAttack()
+    private void Attack()
     {
-        if (distanceFromPlayer < distancetoAttack)
-        {
-            animator.SetTrigger("basicAttack");
-        }
+        if (!heavyAttackAvailable) { animator.SetTrigger("basicAttack"); }
+            else if (heavyAttackAvailable)
+            {
+                animator.SetTrigger("heavyAttack");
+            }
+        
+       
     }
+
+   
 
     private void lookatPlayer()
     {
