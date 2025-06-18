@@ -12,7 +12,7 @@ public class PlayerTrigger : MonoBehaviour
     private GameObject player;
 
     [Header("Gem")]
-    [SerializeField] private ParticleSystem gemParticle;
+   
     private MeshRenderer meshGem; 
     private SimpleGemsAnim gemAnim;
 
@@ -54,19 +54,7 @@ public class PlayerTrigger : MonoBehaviour
     {
         gameManager.SetGems(10);
         other.enabled=false;
-        meshGem = other.GetComponent<MeshRenderer>();
-        gemAnim = other.GetComponent<SimpleGemsAnim>();
-        gemAnim.rotationSpeed = 1000;
-
-        for (float i = 0; i <= 3f; i += 0.1f)
-        {
-            gemAnim.floatHeight = i;
-            yield return new WaitForSeconds(0.1f);
-        }
-        yield return new WaitForSeconds(0.1f);
-        meshGem.enabled = false;
-        var particleInstantiate = Instantiate(gemParticle, other.transform);
-        particleInstantiate.Play();
+        
         yield return new WaitForSeconds(1);
         Destroy(other.gameObject);
     }
