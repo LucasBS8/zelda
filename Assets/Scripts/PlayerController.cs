@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
 
     private GameManager gameManager;
 
+    private Playsound playSound;
+
     [Header("Player Configurations")]
     [SerializeField] private int hp = 4;
     [SerializeField] private float movementeSpeed;
@@ -32,6 +34,7 @@ public class PlayerController : MonoBehaviour
         slash = GetComponentInChildren<ParticleSystem>();
         controller = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
+        playSound = GetComponent<Playsound>();
     }
 
     void Update()
@@ -86,7 +89,7 @@ public class PlayerController : MonoBehaviour
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
 
-        if (Input.GetButtonDown("Fire1") && !isAttack)
+        if (Input.GetButtonDown("Fire1") || Input.GetKeyDown(KeyCode.C) && !isAttack)
         {
             Attack();
         }
@@ -95,6 +98,7 @@ public class PlayerController : MonoBehaviour
     private void Attack()
     {
         isAttack = true;
+        
         anim.SetTrigger("Attack");
         slash.Play();
 
@@ -104,6 +108,11 @@ public class PlayerController : MonoBehaviour
         {
             col.gameObject.SendMessage("GetHit", amountDamage, SendMessageOptions.DontRequireReceiver);
         }
+    }
+    
+    void AttackSound()
+    {
+        playSound.Play(1, 1, 0.9f, 1.1f);
     }
 
     public void AttackDone()
@@ -125,6 +134,7 @@ public class PlayerController : MonoBehaviour
         if(isDead) { return; }
 
         hp -= amount;
+        playSound.Play(0);
         if (hp > 0)
         {
             anim.SetTrigger("Hit");
