@@ -154,7 +154,21 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("TakeDamage"))
-            GetHit(1);
+        switch (other.gameObject.tag)
+        {
+            case "TakeDamage":
+                GetHit(1);
+                break;
+            case "Collectable":
+                playSound.Play(2,0.8f, 1f, 1.1f);
+                break;
+
+            
+
+            
+                
+              
+        }
     }
+
 }
