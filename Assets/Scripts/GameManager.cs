@@ -2,6 +2,8 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
+
 
 public enum EnemyState
 {
@@ -160,5 +162,20 @@ public class GameManager : MonoBehaviour
         {
             gate.SetActive(false);
         }
+    }
+
+    public void SceneGameplay ()
+    {
+        SceneManager.LoadScene("cena antiga");
+    }
+
+    public void SceneMenu ()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }

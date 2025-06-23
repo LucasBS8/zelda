@@ -17,19 +17,24 @@ public class SpikeSlime : MonoBehaviour
 
     [Header("Variables")]
     [SerializeField] private int HP;
-    [SerializeField] private bool isAttacking = false;
-    [SerializeField] private bool isDead = false;
     [SerializeField] private float distanceFromPlayer;
     [SerializeField] private float distanceToEngage;
     [SerializeField] private float distancetoAttack;
-    [SerializeField] private bool heavyAttackAvailable = false;
+    [SerializeField] private float iFramesTime;
+
+    [Header ("Bools")]
     [SerializeField] private bool isInvincible = false;
     [SerializeField] private bool inCombat = false;
-    [SerializeField] private float iFramesTime;
+    [SerializeField] private bool isAttacking = false;
+    [SerializeField] private bool isDead = false;
+    [SerializeField] private bool heavyAttackAvailable = false;
+    [SerializeField] private bool isWalking = false;
+
 
     [Header("GameObjects")]
     [SerializeField] private GameObject player;
     [SerializeField] private SkinnedMeshRenderer slimeRenderer;
+    [SerializeField] private Transform restingPlace;
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -51,6 +56,14 @@ public class SpikeSlime : MonoBehaviour
     {   
         if( isDead) { return; }
 
+        BattleStatus();
+
+
+    }
+
+    void BattleStatus()
+    {
+        
         if (HP <= 5) { heavyAttackAvailable = true; }
         distanceFromPlayer = Vector3.Distance(transform.position, player.transform.position);
 
@@ -65,10 +78,12 @@ public class SpikeSlime : MonoBehaviour
         else if(inCombat && distanceFromPlayer <= distancetoAttack) { Attack(); }
         else if (!inCombat)
         {
-            agent.ResetPath(); 
+            agent.SetDestination(restingPlace.transform.position);
             animator.SetBool("walking", false); 
         }
-       
+
+        isWalking = agent.velocity.magnitude > 0.1f;
+        animator.SetBool("walking", isWalking);
     }
 
     private void WalkToPlayer()
@@ -125,6 +140,7 @@ public class SpikeSlime : MonoBehaviour
         if (isDead || isInvincible)
             return;
 
+
         HP -= amount;
         playSound.Play(2);
         isInvincible = true;
@@ -173,6 +189,14 @@ public class SpikeSlime : MonoBehaviour
         // Garante que fique visível no final
         slimeRenderer.enabled = true;
         isInvincible = false;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("PlayerAttack"))
+        {
+            GetHit(1); // ou o valor adequado
+        }
     }
 
 

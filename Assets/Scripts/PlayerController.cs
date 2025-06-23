@@ -100,7 +100,7 @@ public class PlayerController : MonoBehaviour
         isAttack = true;
         
         anim.SetTrigger("Attack");
-        slash.Play();
+       
 
         hitInfo = Physics.OverlapSphere(hitBox.position, hitRange, hitMask);
 
@@ -108,6 +108,11 @@ public class PlayerController : MonoBehaviour
         {
             col.gameObject.SendMessage("GetHit", amountDamage, SendMessageOptions.DontRequireReceiver);
         }
+    }
+
+    void SlashParticle()
+    {
+        slash.Play();
     }
     
     void AttackSound()

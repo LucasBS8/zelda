@@ -9,6 +9,8 @@ TagManager:
   - TakeDamage
   - Collectable
   - Key
+  - PlayerAttack
+  - EnemyTop
   layers:
   - Default
   - TransparentFX
