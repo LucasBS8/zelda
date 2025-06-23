@@ -65,15 +65,21 @@
     <Compile Include="Assets\Matthew Guz\Slash Effects FREE\Scripts\CameraRotation.cs" />
     <Compile Include="Assets\Playsound.cs" />
     <Compile Include="Assets\Scripts\Grass.cs" />
+    <Compile Include="Assets\Scripts\dialog\DialogueManager.cs" />
+    <Compile Include="Assets\Scripts\dialog\DialogueSequence.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\RainManager.cs" />
     <Compile Include="Assets\Matthew Guz\Slash Effects FREE\Scripts\Prefab Manager.cs" />
     <Compile Include="Assets\Scripts\Slime.cs" />
     <Compile Include="Assets\LockRotation.cs" />
     <Compile Include="Assets\Scripts\Emerald.cs" />
+    <Compile Include="Assets\Scripts\ThirdPersonCamera.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\loading\LoadingScreenController.cs" />
     <Compile Include="Assets\Scripts\PlayerTrigger.cs" />
     <Compile Include="Assets\BTM_Assets\BTM_Items_Gems\Scripts\SimpleGemsAnim.cs" />
+    <Compile Include="Assets\Scripts\dialog\DialogueLine.cs" />
+    <Compile Include="Assets\Scripts\dialog\TriggerDialogue.cs" />
     <Compile Include="Assets\BrokenVector\LowPolyFencePack\Scripts\DoorToggle.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\BrokenVector\LowPolyFencePack\Scripts\DoorController.cs" />
@@ -586,6 +592,14 @@
     </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>Library\PackageCache\com.unity.nuget.mono-cecil@d6f9955a5d5f\Mono.Cecil.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Android.Types">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Android.Gradle">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Gradle.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="netstandard">
@@ -1270,10 +1284,6 @@
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">

@@ -60,13 +60,19 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        rainParticle.Play();
+        if (rainParticle != null)
+        {
+            rainParticle.Play();
+        }
         ChangeGameState(GameState.GAMEPLAY);
     }
 
     private void Start()
     {
-        gemsText.text = gems.ToString();
+        if (gemsText != null)
+        {
+            gemsText.text = gems.ToString();
+        }
     }
 
     public void OnRain(bool isRain)
