@@ -5527,7 +5527,7 @@ MonoBehaviour:
   HP: 10
   distanceFromPlayer: 0
   distanceToEngage: 5
-  distancetoAttack: 2
+  distancetoAttack: 3
   iFramesTime: 1.5
   isInvincible: 0
   inCombat: 0

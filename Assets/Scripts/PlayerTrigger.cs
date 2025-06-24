@@ -15,11 +15,13 @@ public class PlayerTrigger : MonoBehaviour
    
     private MeshRenderer meshGem; 
     private SimpleGemsAnim gemAnim;
+    private Playsound playSound;
 
     private void Awake()
     {
         gameManager = FindFirstObjectByType<GameManager>();
         player = GameObject.FindGameObjectWithTag("Player");
+        playSound = GetComponent<Playsound>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -35,6 +37,10 @@ public class PlayerTrigger : MonoBehaviour
             case "Key":
                 gameManager.keyAmount++;
                 gameManager.OpenGate();
+                if (gameManager.keyAmount >= 2)
+                {
+                    playSound.Play(4);
+                }
                 Destroy(other.gameObject, 0.6f);
                 break;
         }

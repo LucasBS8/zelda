@@ -1,29 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\PC\\Desktop\\zeldaclone\\zelda\\",
+  "WorkspaceRootPath": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|C:\\Users\\PC\\Desktop\\zeldaclone\\zelda\\assets\\scripts\\slime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|c:\\users\\matutino\\documents\\github\\zelda\\assets\\scripts\\slime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\slime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|C:\\Users\\PC\\Desktop\\zeldaclone\\zelda\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|c:\\users\\pc\\desktop\\zeldaclone\\zelda\\assets\\playsound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|solutionrelative:assets\\playsound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|C:\\Users\\PC\\Desktop\\zeldaclone\\zelda\\assets\\spikeslime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\assets\\spikeslime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|solutionrelative:assets\\spikeslime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|C:\\Users\\PC\\Desktop\\zeldaclone\\zelda\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|c:\\users\\matutino\\documents\\github\\zelda\\assets\\scripts\\playertrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playertrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|C:\\Users\\PC\\Desktop\\zeldaclone\\zelda\\assets\\scripts\\thirdpersoncamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\assets\\playsound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|solutionrelative:assets\\playsound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\assets\\scripts\\thirdpersoncamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\thirdpersoncamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,33 +38,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:131:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "PlayerTrigger.cs",
+              "DocumentMoniker": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\Assets\\Scripts\\PlayerTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerTrigger.cs",
+              "ToolTip": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\Assets\\Scripts\\PlayerTrigger.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerTrigger.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAA1wCkAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T11:39:14.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Playsound.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\zeldaclone\\zelda\\Assets\\Playsound.cs",
+              "DocumentMoniker": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\Assets\\Playsound.cs",
               "RelativeDocumentMoniker": "Assets\\Playsound.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\zeldaclone\\zelda\\Assets\\Playsound.cs",
+              "ToolTip": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\Assets\\Playsound.cs",
               "RelativeToolTip": "Assets\\Playsound.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAA5wAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-23T22:39:32.658Z",
               "EditorCaption": ""
@@ -69,11 +74,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Slime.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\zeldaclone\\zelda\\Assets\\Scripts\\Slime.cs",
+              "DocumentMoniker": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\Assets\\Scripts\\Slime.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Slime.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\zeldaclone\\zelda\\Assets\\Scripts\\Slime.cs",
+              "ToolTip": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\Assets\\Scripts\\Slime.cs",
               "RelativeToolTip": "Assets\\Scripts\\Slime.cs",
-              "ViewState": "AgIAAJgAAAAAAAAAAAAuwLQAAAApAAAAAAAAAA==",
+              "ViewState": "AQIAAJgAAAAAAAAAAAAuwJ4AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-23T15:53:47.838Z",
               "EditorCaption": ""
@@ -82,21 +87,22 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\zeldaclone\\zelda\\Assets\\Scripts\\GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\zeldaclone\\zelda\\Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\Assets\\Scripts\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "ViewState": "AQIAAI8AAAAAAAAAAAAtwDEAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T12:32:42.65Z"
+              "WhenOpened": "2025-06-23T12:32:42.65Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ThirdPersonCamera.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\zeldaclone\\zelda\\Assets\\Scripts\\ThirdPersonCamera.cs",
+              "DocumentMoniker": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\Assets\\Scripts\\ThirdPersonCamera.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ThirdPersonCamera.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\zeldaclone\\zelda\\Assets\\Scripts\\ThirdPersonCamera.cs",
+              "ToolTip": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\Assets\\Scripts\\ThirdPersonCamera.cs",
               "RelativeToolTip": "Assets\\Scripts\\ThirdPersonCamera.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -104,28 +110,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "PlayerController.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\zeldaclone\\zelda\\Assets\\Scripts\\PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\Assets\\Scripts\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\zeldaclone\\zelda\\Assets\\Scripts\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\Assets\\Scripts\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
-              "ViewState": "AgIAAIgAAAAAAAAAAAA8wKIAAAAlAAAAAAAAAA==",
+              "ViewState": "AQIAAIEAAAAAAAAAAIAwwJsAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-23T12:14:01.516Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "SpikeSlime.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\zeldaclone\\zelda\\Assets\\SpikeSlime.cs",
+              "DocumentMoniker": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\Assets\\SpikeSlime.cs",
               "RelativeDocumentMoniker": "Assets\\SpikeSlime.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\zeldaclone\\zelda\\Assets\\SpikeSlime.cs",
+              "ToolTip": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\Assets\\SpikeSlime.cs",
               "RelativeToolTip": "Assets\\SpikeSlime.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAA5wFQAAAAIAAAAAAAAAA==",
+              "ViewState": "AQIAAIUAAAAAAAAAAAAYwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T11:35:13.187Z"
+              "WhenOpened": "2025-06-23T11:35:13.187Z",
+              "EditorCaption": ""
             }
           ]
         }

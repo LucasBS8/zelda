@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.AI;
@@ -26,9 +27,12 @@ public class Slime : MonoBehaviour
     [SerializeField] private float alertTimer;
     [SerializeField] private float patrolTimer;
     [SerializeField] private float switchWaypointTimer;
+    [SerializeField] private float minRandToDrop;
+
 
     [Header("GameObjects")]
     [SerializeField] private GameObject player;
+    [SerializeField] private List<GameObject> dropsList = new List<GameObject>();
 
     [Header("Bools")]
     private bool isWalk;
@@ -134,25 +138,40 @@ public class Slime : MonoBehaviour
 
         switchWaypointTimer = Random.Range(4f, 7f);
 
-        Debug.Log($"Novo waypoint sorteado: {idWayPoint} - posição {destination}");
+       
     }
 
-
+    private void Drop()
+    {
+        int willDrop = Random.Range(0, 100);
+        if (willDrop > minRandToDrop && dropsList.Count > 0)
+        {
+            int randomIndex = Random.Range(0, dropsList.Count);
+            GameObject drop = dropsList[randomIndex];
+            Instantiate(drop, transform.position + Vector3.up, Quaternion.identity);
+        }
+    }
     private void GetHit(int amount)
     {
         if (isDead)
             return;
 
+        playSound.Play(1, 1, 0.9f, 1.1f);
         hp -= amount;
         if (hp > 0 && !isDead)
         {
+            
+            Debug.Log("som chamado");
             animator.SetTrigger("getHit");
            
         }
         else
         {
+
+            playSound.Play(2, 1, 0.9f, 1.1f);
             isDead = true;
             animator.SetTrigger("die");
+            Drop();
            
         }
     }

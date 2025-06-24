@@ -440,17 +440,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WayPoints: []
-  hp: 1
+  hp: 2
   idWayPoint: 0
   state: 0
-  distanceToAttack: 0
+  distanceToAttack: 2
   distanceFromPlayer: 0
-  distanceToAlert: 0
-  timeToEngage: 0
+  distanceToAlert: 10
+  timeToEngage: 1.5
   alertTimer: 0
   patrolTimer: 0
   switchWaypointTimer: 0
+  minRandToDrop: 30
   player: {fileID: 0}
+  dropsList:
+  - {fileID: 812584724935621378, guid: 739efd1e2df4b5545ac67d03f86373fb, type: 3}
+  - {fileID: 5468273658333593747, guid: 1a5af7beed412dc42a5dffbf0d23f151, type: 3}
   isAttack: 0
   isPlayerVisible: 0
 --- !u!136 &5934026429603993559
@@ -540,6 +544,8 @@ MonoBehaviour:
   audioSource: {fileID: 4921606171744446822}
   audioClips:
   - {fileID: 8300000, guid: 2c2ad7e6bd4c5dd43825daf4376099c0, type: 3}
+  - {fileID: 8300000, guid: f3b1408a1f9f85f408c7aa6ec3a830fb, type: 3}
+  - {fileID: 8300000, guid: e2eebd346519f9345809385cbe727a95, type: 3}
 --- !u!82 &4921606171744446822
 AudioSource:
   m_ObjectHideFlags: 0

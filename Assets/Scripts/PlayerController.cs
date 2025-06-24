@@ -19,11 +19,12 @@ public class PlayerController : MonoBehaviour
     private Playsound playSound;
 
     [Header("Player Configurations")]
-    [SerializeField] private int hp = 4;
+    [SerializeField] private int hp;
+    [SerializeField] private int maxHP = 4;
     [SerializeField] private float movementeSpeed;
     [SerializeField] private bool isAttack;
     [SerializeField] private Transform hitBox;
-    [SerializeField] private float hitRange = 0.5f;
+    [SerializeField] private float hitRange;
     [SerializeField] private Collider[] hitInfo;
     [SerializeField] private LayerMask hitMask;
     [SerializeField] private int amountDamage;
@@ -161,6 +162,15 @@ public class PlayerController : MonoBehaviour
                 break;
             case "Collectable":
                 playSound.Play(2,0.8f, 1f, 1.1f);
+                break;
+            case "HealthPickup":
+                hp = hp + 1;
+                Destroy(other.gameObject);
+                playSound.Play(3, 0.8f, 1f, 1.1f);
+                if (hp > maxHP)
+                {
+                    hp = maxHP; 
+                }   
                 break;
 
             
