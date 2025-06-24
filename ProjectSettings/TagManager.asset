@@ -12,6 +12,7 @@ TagManager:
   - PlayerAttack
   - EnemyTop
   - HealthPickup
+  - HPTEXT
   layers:
   - Default
   - TransparentFX

@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
     [Header("UI")]
     public TMP_Text gemsText;
 
-    private int bossSlimesDefeated;
+    public int bossSlimesDefeated;
 
     private void Awake()
     {
@@ -186,6 +186,10 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Main Menu");
     }
 
+    public void GameOver()
+    {
+        SceneManager.LoadScene("GAME OVER");
+    }
     public void QuitGame()
     {
         Application.Quit();

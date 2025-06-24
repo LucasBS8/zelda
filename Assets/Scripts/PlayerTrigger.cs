@@ -41,7 +41,7 @@ public class PlayerTrigger : MonoBehaviour
                 {
                     playSound.Play(4);
                 }
-                Destroy(other.gameObject, 0.6f);
+                Destroy(other.gameObject);
                 break;
         }
     }

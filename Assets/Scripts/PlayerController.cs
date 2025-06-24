@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -13,6 +14,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private bool isDead = false;
 
     public GameObject cam;
+
+    [SerializeField] private TMP_Text hptext;
+    [SerializeField] private TMP_Text keysText;
+    [SerializeField] private TMP_Text bossSlimeText;
+
 
     private GameManager gameManager;
 
@@ -36,6 +42,7 @@ public class PlayerController : MonoBehaviour
         controller = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
         playSound = GetComponent<Playsound>();
+        
     }
 
     void Update()
@@ -43,8 +50,13 @@ public class PlayerController : MonoBehaviour
         if (gameManager.gameState != GameState.GAMEPLAY)
             return;
 
-       
-       
+       hptext.SetText("HP:"+hp.ToString());
+        if (gameManager.keyAmount < 2) { keysText.SetText("Portão TRANCADO - Chaves:" + gameManager.keyAmount.ToString()); }
+        else if (gameManager.keyAmount >= 2) { keysText.SetText("Portão LIBERADO - Chaves:" + gameManager.keyAmount.ToString()); }
+
+        bossSlimeText.SetText("Slimes Chefes Derrotados: " + gameManager.bossSlimesDefeated.ToString() + "/3");
+
+
 
         Inputs();
         MoveCharacter();
@@ -151,6 +163,11 @@ public class PlayerController : MonoBehaviour
             anim.SetTrigger("Die");
             gameManager.ChangeGameState(GameState.DIE);
         }
+    }
+
+    void goToGameOverScene()
+    {
+        gameManager.GameOver();
     }
 
     private void OnTriggerEnter(Collider other)
