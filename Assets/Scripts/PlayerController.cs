@@ -166,7 +166,7 @@ public class PlayerController : MonoBehaviour
             case "HealthPickup":
                 hp = hp + 1;
                 Destroy(other.gameObject);
-                playSound.Play(3, 0.8f, 1f, 1.1f);
+                playSound.Play(3, 0.5f, 1f, 1.1f);
                 if (hp > maxHP)
                 {
                     hp = maxHP; 

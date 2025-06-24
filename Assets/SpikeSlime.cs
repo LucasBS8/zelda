@@ -158,6 +158,7 @@ public class SpikeSlime : MonoBehaviour
         {
             isDead = true;
             animator.SetTrigger("die");
+            gameManager.FinishGame();
         }
     }
 

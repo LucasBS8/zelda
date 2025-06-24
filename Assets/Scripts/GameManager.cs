@@ -60,6 +60,8 @@ public class GameManager : MonoBehaviour
     [Header("UI")]
     public TMP_Text gemsText;
 
+    private int bossSlimesDefeated;
+
     private void Awake()
     {
         if (rainParticle != null)
@@ -69,6 +71,16 @@ public class GameManager : MonoBehaviour
         ChangeGameState(GameState.GAMEPLAY);
     }
 
+    public void FinishGame()
+    {
+        bossSlimesDefeated++;
+
+            if(bossSlimesDefeated >= 3)
+        {
+            SceneManager.LoadScene("GameCompleted");
+        }
+        
+    }
     private void Start()
     {
         if (gemsText != null)

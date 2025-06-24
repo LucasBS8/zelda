@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\Slime.cs" />
     <Compile Include="Assets\LockRotation.cs" />
     <Compile Include="Assets\Scripts\Emerald.cs" />
+    <Compile Include="Assets\SoundManager.cs" />
     <Compile Include="Assets\HurtBox.cs" />
     <Compile Include="Assets\Scripts\ThirdPersonCamera.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
