@@ -12,8 +12,8 @@ public class PlayerTrigger : MonoBehaviour
     private GameObject player;
 
     [Header("Gem")]
-   
-    private MeshRenderer meshGem; 
+
+    private MeshRenderer meshGem;
     private SimpleGemsAnim gemAnim;
     private Playsound playSound;
 
@@ -41,7 +41,7 @@ public class PlayerTrigger : MonoBehaviour
                 {
                     playSound.Play(4);
                 }
-                Destroy(other.gameObject, 0.6f);
+                Destroy(other.gameObject);
                 break;
         }
     }
@@ -59,8 +59,8 @@ public class PlayerTrigger : MonoBehaviour
     IEnumerator ColetableGem(Collider other)
     {
         gameManager.SetGems(10);
-        other.enabled=false;
-        
+        other.enabled = false;
+
         yield return new WaitForSeconds(1);
         Destroy(other.gameObject);
     }

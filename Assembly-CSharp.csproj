@@ -67,10 +67,13 @@
     <Compile Include="Assets\Scripts\Grass.cs" />
     <Compile Include="Assets\Scripts\dialog\DialogueManager.cs" />
     <Compile Include="Assets\Scripts\dialog\DialogueSequence.cs" />
+    <Compile Include="Assets\Scripts\MouseEnabler.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\MouseInvisible.cs" />
     <Compile Include="Assets\Scripts\RainManager.cs" />
     <Compile Include="Assets\Matthew Guz\Slash Effects FREE\Scripts\Prefab Manager.cs" />
     <Compile Include="Assets\Scripts\Slime.cs" />
+    <Compile Include="Assets\Scripts\MouseVisible.cs" />
     <Compile Include="Assets\Scripts\Emerald.cs" />
     <Compile Include="Assets\Scripts\LockRotation.cs" />
     <Compile Include="Assets\Scripts\ThirdPersonCamera.cs" />

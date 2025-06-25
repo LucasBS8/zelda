@@ -25,7 +25,6 @@ public class SpikeSlime : MonoBehaviour
     [Header ("Bools")]
     [SerializeField] private bool isInvincible = false;
     [SerializeField] private bool inCombat = false;
-    [SerializeField] private bool isAttacking = false;
     [SerializeField] private bool isDead = false;
     [SerializeField] private bool heavyAttackAvailable = false;
     [SerializeField] private bool isWalking = false;
