@@ -38,7 +38,6 @@ public class GameManager : MonoBehaviour
     public float slimeLookAtSpeed = 2;
 
     [Header("Rain manager")]
-    public ParticleSystem rainParticle;
     public int rainRateOverTime;
     public int rainIncrement;
     public float rainIncrementDelay;
@@ -50,6 +49,8 @@ public class GameManager : MonoBehaviour
     [Header("Keys and gate")]
     public int keyAmount;
     public GameObject gate;
+    public ParticleSystem rainParticle;
+    public Volume globalVolume;
 
     [Header("NightManager")]
     public Volume postB;
@@ -75,7 +76,7 @@ public class GameManager : MonoBehaviour
     {
         bossSlimesDefeated++;
 
-        if (bossSlimesDefeated >= 3)
+        if (bossSlimesDefeated >= 1)
         {
             SceneManager.LoadScene("GameCompleted");
         }
@@ -172,8 +173,48 @@ public class GameManager : MonoBehaviour
     {
         if (keyAmount >= 2)
         {
-            gate.SetActive(false);
+            if (rainParticle != null)
+            {
+                rainParticle.gameObject.SetActive(true);
+            }
+
+            if (gate != null)
+            {
+                gate.SetActive(false);
+            }
+
+            // Inicia a corrotina para fazer o fade-in do volume
+            StartCoroutine(FadeInVolume(1.0f)); // Duração de 1 segundo para o fade
         }
+    }
+
+    private IEnumerator FadeInVolume(float duration)
+    {
+        // Instancia o novo volume aqui, dentro da corrotina
+        Volume newVolume = Instantiate(globalVolume);
+        newVolume.weight = 0; // Garante que começa com peso zero
+
+        float elapsedTime = 0f;
+
+        while (elapsedTime < duration)
+        {
+            // Calcula o progresso (t) de 0 para 1 ao longo da duração
+            float t = elapsedTime / duration;
+
+            // Aplica o Lerp com o 't' calculado a cada frame
+            newVolume.weight = Mathf.Lerp(0f, 1f, t); // Fade de 0 para 1 (ou o valor que desejar)
+
+            // Incrementa o tempo passado
+            elapsedTime += Time.deltaTime;
+
+            // Espera até o próximo frame antes de continuar o loop
+            yield return null;
+        }
+
+        // Garante que o valor final seja exatamente 1 ao final da corrotina
+        newVolume.weight = 1f;
+
+        Debug.Log("Fade-in do Volume completo!");
     }
 
     public void SceneGameplay()

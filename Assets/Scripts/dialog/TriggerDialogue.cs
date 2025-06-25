@@ -11,6 +11,6 @@ public class TriggerDialogue : MonoBehaviour
         {
             manager.StartDialogue(sequence);
         }
-        this.gameObject.SetActive(false);
+        gameObject.SetActive(false);
     }
 }

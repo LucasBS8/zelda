@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\dialog\DialogueSequence.cs" />
     <Compile Include="Assets\Scripts\MouseEnabler.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\quest\quest1.cs" />
     <Compile Include="Assets\Scripts\MouseInvisible.cs" />
     <Compile Include="Assets\Scripts\RainManager.cs" />
     <Compile Include="Assets\Matthew Guz\Slash Effects FREE\Scripts\Prefab Manager.cs" />
@@ -76,6 +77,7 @@
     <Compile Include="Assets\Scripts\MouseVisible.cs" />
     <Compile Include="Assets\Scripts\Emerald.cs" />
     <Compile Include="Assets\Scripts\LockRotation.cs" />
+    <Compile Include="Assets\Scripts\Portal.cs" />
     <Compile Include="Assets\Scripts\ThirdPersonCamera.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\loading\LoadingScreenController.cs" />
@@ -1271,6 +1273,10 @@
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
