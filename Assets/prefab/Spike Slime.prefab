@@ -5531,7 +5531,6 @@ MonoBehaviour:
   iFramesTime: 1.5
   isInvincible: 0
   inCombat: 0
-  isAttacking: 0
   isDead: 0
   heavyAttackAvailable: 0
   isWalking: 0
@@ -5651,6 +5650,7 @@ MonoBehaviour:
   audioClips:
   - {fileID: 8300000, guid: ef59784c01c3ec545826612d10b22c82, type: 3}
   - {fileID: 8300000, guid: e0ae7d6d88a23b64c937ec1762f1c466, type: 3}
+  - {fileID: 8300000, guid: 03cceb0879aaa254aa85f32ef5d5ed70, type: 3}
   - {fileID: 8300000, guid: 03cceb0879aaa254aa85f32ef5d5ed70, type: 3}
 --- !u!1 &3860502108458502794
 GameObject:

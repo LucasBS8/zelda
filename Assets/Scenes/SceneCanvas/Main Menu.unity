@@ -267,6 +267,7 @@ GameObject:
   m_Component:
   - component: {fileID: 196368862}
   - component: {fileID: 196368861}
+  - component: {fileID: 196368863}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -298,7 +299,6 @@ MonoBehaviour:
   slimeAlertTime: 3
   slimeAttackDelay: 0
   slimeLookAtSpeed: 2
-  rainParticle: {fileID: 0}
   rainRateOverTime: 50
   rainIncrement: 5
   rainIncrementDelay: 1
@@ -306,11 +306,14 @@ MonoBehaviour:
   percDrop: 100
   keyAmount: 0
   gate: {fileID: 0}
+  rainParticle: {fileID: 0}
+  globalVolume: {fileID: 0}
   postB: {fileID: 0}
   nightRateOverTime: 0
   nightIncrement: 0
   nightIncrementDelay: 0
   gemsText: {fileID: 0}
+  bossSlimesDefeated: 0
 --- !u!4 &196368862
 Transform:
   m_ObjectHideFlags: 0
@@ -326,6 +329,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &196368863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196368860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69f2be6fee8a65246a914efd52674201, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &340743373
 GameObject:
   m_ObjectHideFlags: 0

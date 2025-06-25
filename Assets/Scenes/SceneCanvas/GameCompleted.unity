@@ -390,7 +390,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 515167938}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 893629923}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SceneMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &515167938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -701,6 +713,105 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 750494212}
   m_CullTransparentMesh: 1
+--- !u!1 &893629920
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 893629924}
+  - component: {fileID: 893629923}
+  - component: {fileID: 893629922}
+  - component: {fileID: 893629921}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &893629921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893629920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69f2be6fee8a65246a914efd52674201, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &893629922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893629920}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e4ca631fb51c64a89a04cb658a1ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentSequence: {fileID: 11400000, guid: 881b03a1bdd7ac34b9ee54fa1181d750, type: 2}
+  speakerNameText: {fileID: 0}
+  sentenceText: {fileID: 0}
+  dialogueUI: {fileID: 0}
+  nextLineAction: {fileID: 1781555164194001046, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  typingSpeed: 0.002
+--- !u!114 &893629923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893629920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ce1e0aaabc42aa40847832eaf47b326, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameState: 0
+  player: {fileID: 0}
+  slimeWayPoints: []
+  slimeIdleWaitTime: 0
+  slimeDistanceToAttack: 2.3
+  slimeAlertTime: 3
+  slimeAttackDelay: 0
+  slimeLookAtSpeed: 2
+  rainRateOverTime: 0
+  rainIncrement: 0
+  rainIncrementDelay: 0
+  gemPrefab: {fileID: 812584724935621378, guid: 739efd1e2df4b5545ac67d03f86373fb, type: 3}
+  percDrop: 100
+  keyAmount: 0
+  gate: {fileID: 0}
+  rainParticle: {fileID: 0}
+  globalVolume: {fileID: 0}
+  postB: {fileID: 0}
+  nightRateOverTime: 0
+  nightIncrement: 0
+  nightIncrementDelay: 0
+  gemsText: {fileID: 0}
+  bossSlimesDefeated: 0
+--- !u!4 &893629924
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893629920}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1570547538
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,3 +1002,4 @@ SceneRoots:
   - {fileID: 321373361}
   - {fileID: 2002190888}
   - {fileID: 1570547541}
+  - {fileID: 893629924}

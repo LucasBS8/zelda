@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/cena antiga.unity
     guid: 3a2ae443337126b4a84f01f1bca4ca14
   - enabled: 1
+    path: Assets/Scenes/SceneCanvas/Main Menu.unity
+    guid: 9b645c7bc6d073f49a10c10e70a90752
+  - enabled: 1
     path: Assets/Scenes/game1.unity
     guid: e0952dbbc5451204eb9f4be069a1d1e2
   - enabled: 1

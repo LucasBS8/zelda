@@ -76,7 +76,7 @@ public class GameManager : MonoBehaviour
     {
         bossSlimesDefeated++;
 
-        if (bossSlimesDefeated >= 1)
+        if (bossSlimesDefeated >= 3)
         {
             SceneManager.LoadScene("GameCompleted");
         }
@@ -219,7 +219,7 @@ public class GameManager : MonoBehaviour
 
     public void SceneGameplay()
     {
-        SceneManager.LoadScene("cena antiga");
+        SceneManager.LoadScene("game1");
     }
 
     public void SceneMenu()
