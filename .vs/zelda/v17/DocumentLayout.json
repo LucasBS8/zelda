@@ -1,38 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\Documents\\gitHub\\jogoVasco\\zelda\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|c:\\users\\matutino\\documents\\github\\zelda\\assets\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|solutionrelative:assets\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\github\\jogovasco\\zelda\\assets\\scripts\\playsound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playsound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|c:\\users\\matutino\\documents\\github\\zelda\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\github\\jogovasco\\zelda\\assets\\scripts\\dialog\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialog\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\gitHub\\jogoVasco\\zelda\\Library\\PackageCache\\com.unity.render-pipelines.core@89eb3bdcd743\\Runtime\\RenderPipeline\\RenderPipelineGlobalSettingsUtils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.render-pipelines.core@89eb3bdcd743\\Runtime\\RenderPipeline\\RenderPipelineGlobalSettingsUtils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|C:\\Users\\User\\Documents\\gitHub\\jogoVasco\\zelda\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\assets\\scripts\\slime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\slime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\assets\\spikeslime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|solutionrelative:assets\\spikeslime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\assets\\scripts\\playertrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playertrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\assets\\playsound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|solutionrelative:assets\\playsound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\assets\\scripts\\thirdpersoncamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B710B83-D1C6-9AD0-7E6B-01320852A323}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\thirdpersoncamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\gitHub\\jogoVasco\\zelda\\Library\\PackageCache\\com.unity.ai.navigation@eb5635ad590d\\Editor\\NavigationOverlay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.ai.navigation@eb5635ad590d\\Editor\\NavigationOverlay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,109 +30,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SoundManager.cs",
-              "DocumentMoniker": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\Assets\\SoundManager.cs",
-              "RelativeDocumentMoniker": "Assets\\SoundManager.cs",
-              "ToolTip": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\Assets\\SoundManager.cs",
-              "RelativeToolTip": "Assets\\SoundManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T14:00:25.893Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PlayerTrigger.cs",
-              "DocumentMoniker": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\Assets\\Scripts\\PlayerTrigger.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerTrigger.cs",
-              "ToolTip": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\Assets\\Scripts\\PlayerTrigger.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerTrigger.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAA1wCkAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T11:39:14.365Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "Playsound.cs",
-              "DocumentMoniker": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\Assets\\Playsound.cs",
-              "RelativeDocumentMoniker": "Assets\\Playsound.cs",
-              "ToolTip": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\Assets\\Playsound.cs",
-              "RelativeToolTip": "Assets\\Playsound.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAEAAAA",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\gitHub\\jogoVasco\\zelda\\Assets\\Scripts\\Playsound.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Playsound.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\gitHub\\jogoVasco\\zelda\\Assets\\Scripts\\Playsound.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Playsound.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAACgAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T22:39:32.658Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Slime.cs",
-              "DocumentMoniker": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\Assets\\Scripts\\Slime.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Slime.cs",
-              "ToolTip": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\Assets\\Scripts\\Slime.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Slime.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAA9wJ4AAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T15:53:47.838Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\Assets\\Scripts\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
-              "ToolTip": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\Assets\\Scripts\\GameManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAewFAAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T12:32:42.65Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ThirdPersonCamera.cs",
-              "DocumentMoniker": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\Assets\\Scripts\\ThirdPersonCamera.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ThirdPersonCamera.cs",
-              "ToolTip": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\Assets\\Scripts\\ThirdPersonCamera.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ThirdPersonCamera.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T12:15:11.375Z"
+              "WhenOpened": "2025-06-25T02:55:13.19Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PlayerController.cs",
-              "DocumentMoniker": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\Assets\\Scripts\\PlayerController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
-              "ToolTip": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\Assets\\Scripts\\PlayerController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
-              "ViewState": "AQIAAJ4AAAAAAAAAAAAewKgAAAAlAAAA",
+              "Title": "DialogueManager.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\gitHub\\jogoVasco\\zelda\\Assets\\Scripts\\dialog\\DialogueManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\dialog\\DialogueManager.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\gitHub\\jogoVasco\\zelda\\Assets\\Scripts\\dialog\\DialogueManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\dialog\\DialogueManager.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAqwE0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T12:14:01.516Z",
+              "WhenOpened": "2025-06-25T02:39:47.331Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SpikeSlime.cs",
-              "DocumentMoniker": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\Assets\\SpikeSlime.cs",
-              "RelativeDocumentMoniker": "Assets\\SpikeSlime.cs",
-              "ToolTip": "C:\\Users\\Matutino\\Documents\\GitHub\\zelda\\Assets\\SpikeSlime.cs",
-              "RelativeToolTip": "Assets\\SpikeSlime.cs",
-              "ViewState": "AQIAAIcAAAAAAAAAAAAmwKAAAAAlAAAA",
+              "DocumentIndex": 2,
+              "Title": "RenderPipelineGlobalSettingsUtils.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\gitHub\\jogoVasco\\zelda\\Library\\PackageCache\\com.unity.render-pipelines.core@89eb3bdcd743\\Runtime\\RenderPipeline\\RenderPipelineGlobalSettingsUtils.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.render-pipelines.core@89eb3bdcd743\\Runtime\\RenderPipeline\\RenderPipelineGlobalSettingsUtils.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\gitHub\\jogoVasco\\zelda\\Library\\PackageCache\\com.unity.render-pipelines.core@89eb3bdcd743\\Runtime\\RenderPipeline\\RenderPipelineGlobalSettingsUtils.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.render-pipelines.core@89eb3bdcd743\\Runtime\\RenderPipeline\\RenderPipelineGlobalSettingsUtils.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAAAIkAAABjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T11:35:13.187Z"
+              "WhenOpened": "2025-06-25T01:26:16.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\gitHub\\jogoVasco\\zelda\\Assets\\Scripts\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\gitHub\\jogoVasco\\zelda\\Assets\\Scripts\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAIwBAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T21:41:26.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NavigationOverlay.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\gitHub\\jogoVasco\\zelda\\Library\\PackageCache\\com.unity.ai.navigation@eb5635ad590d\\Editor\\NavigationOverlay.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.ai.navigation@eb5635ad590d\\Editor\\NavigationOverlay.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\gitHub\\jogoVasco\\zelda\\Library\\PackageCache\\com.unity.ai.navigation@eb5635ad590d\\Editor\\NavigationOverlay.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.ai.navigation@eb5635ad590d\\Editor\\NavigationOverlay.cs",
+              "ViewState": "AgIAAA8BAAAAAAAAAAAAAB4BAACFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T20:05:46.816Z"
             }
           ]
         }

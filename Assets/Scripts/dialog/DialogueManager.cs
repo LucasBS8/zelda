@@ -75,14 +75,17 @@ public class DialogueManager : MonoBehaviour
     // 5. Renomeamos a função para refletir melhor sua ação.
     public void ShowNextLine()
     {
-        if (index >= currentSequence.lines.Length)
+        if (!isLinePlaying)
         {
-            EndDialogue();
-            return;
-        }
+            if (index >= currentSequence.lines.Length)
+            {
+                EndDialogue();
+                return;
+            }
 
-        // 6. Em vez de mostrar o texto na hora, iniciamos a Corrotina que faz isso ao longo do tempo.
-        StartCoroutine(TypeLine());
+            // 6. Em vez de mostrar o texto na hora, iniciamos a Corrotina que faz isso ao longo do tempo.
+            StartCoroutine(TypeLine());
+        }
     }
 
     // 7. Esta é a Corrotina que cria o efeito e implementa a trava.
@@ -101,12 +104,6 @@ public class DialogueManager : MonoBehaviour
         {
             dialogueCount++;
             sentenceText.text += letter;
-            if (dialogueCount >= 3 && Input.GetKeyDown(KeyCode.E))
-            {
-                sentenceText.text = line.sentence;
-                break;
-            }
-
             yield return new WaitForSeconds(typingSpeed);
         }
 
